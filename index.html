@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>New Viral Link</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#07080c;
+    color:white;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+.header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    height:65px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 18px;
+    background:rgba(7,8,12,.92);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid #22242c;
+}
+
+.logo{
+    font-size:21px;
+    font-weight:800;
+    letter-spacing:.5px;
+}
+
+.logo span{
+    color:#ff315d;
+}
+
+.menu{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#181a22;
+    font-size:20px;
+}
+
+.hero{
+    padding:28px 18px 18px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:30px;
+    margin-bottom:8px;
+    background:linear-gradient(90deg,#ff315d,#9b5cff);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero p{
+    color:#9699a5;
+    font-size:14px;
+}
+
+.categories{
+    display:flex;
+    gap:9px;
+    overflow-x:auto;
+    padding:8px 15px 20px;
+}
+
+.categories::-webkit-scrollbar{
+    display:none;
+}
+
+.cat{
+    flex-shrink:0;
+    padding:10px 16px;
+    border-radius:25px;
+    background:#15171e;
+    border:1px solid #292c36;
+    color:#bfc2cc;
+    font-size:13px;
+}
+
+.cat.active{
+    background:linear-gradient(135deg,#ff315d,#8d4dff);
+    color:white;
+    border:none;
+}
+
+.feed{
+    width:100%;
+    max-width:650px;
+    margin:auto;
+    padding:0 10px 50px;
+}
+
+.video-card{
+    background:#111319;
+    border:1px solid #252832;
+    border-radius:18px;
+    overflow:hidden;
+    margin-bottom:22px;
+    box-shadow:0 12px 35px rgba(0,0,0,.35);
+}
+
+.video-box{
+    position:relative;
+    background:#000;
+}
+
+.video-box video{
+    width:100%;
+    height:570px;
+    object-fit:cover;
+    display:block;
+}
+
+.badge{
+    position:absolute;
+    top:14px;
+    left:14px;
+    background:rgba(0,0,0,.65);
+    padding:7px 11px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+.video-info{
+    padding:15px;
+}
+
+.title{
+    font-size:17px;
+    font-weight:bold;
+    margin-bottom:7px;
+}
+
+.description{
+    color:#8e919d;
+    font-size:13px;
+    line-height:1.5;
+}
+
+.actions{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-top:14px;
+}
+
+.action{
+    border:1px solid #292c35;
+    background:#191b23;
+    color:#ddd;
+    padding:9px 13px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+.action:hover{
+    background:#242733;
+}
+
+.ad{
+    margin:18px 0;
+    height:110px;
+    border-radius:16px;
+    border:1px dashed #363945;
+    background:#101117;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#686b76;
+    font-size:12px;
+}
+
+.empty{
+    text-align:center;
+    padding:60px 20px;
+    color:#777b87;
+}
+
+.empty-icon{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.footer{
+    text-align:center;
+    padding:25px;
+    border-top:1px solid #22242c;
+    color:#686b76;
+    font-size:12px;
+}
+
+@media(max-width:500px){
+    .video-box video{
+        height:500px;
+    }
+
+    .hero h1{
+        font-size:26px;
+    }
+}
+
+@media(min-width:700px){
+    .video-box video{
+        height:650px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        New <span>Viral</span> Link
+    </div>
+
+    <div class="menu">☰</div>
+
+</header>
+
+
+<section class="hero">
+
+    <h1>New Viral Videos</h1>
+
+    <p>Watch the latest short videos in one place</p>
+
+</section>
+
+
+<div class="categories">
+
+    <div class="cat active">🔥 Latest</div>
+    <div class="cat">😂 Funny</div>
+    <div class="cat">🎵 Music</div>
+    <div class="cat">🎬 Viral</div>
+    <div class="cat">⚡ Trending</div>
+
+</div>
+
+
+<main class="feed" id="feed">
+
+
+    <!-- VIDEO 1 -->
+
+    <article class="video-card">
+
+        <div class="video-box">
+
+            <!-- নিজের ভিডিও এখানে বসাবে -->
+            <video controls playsinline preload="metadata">
+                <source src="videos/video1.mp4" type="video/mp4">
+            </video>
+
+            <div class="badge">🔥 VIRAL</div>
+
+        </div>
+
+
+        <div class="video-info">
+
+            <div class="title">
+                My First Viral Video
+            </div>
+
+            <div class="description">
+                New viral short video. Watch and share with your friends.
+            </div>
+
+            <div class="actions">
+
+                <button class="action" onclick="likeVideo(this)">
+                    ❤️ Like
+                </button>
+
+                <button class="action">
+                    👁️ <span class="views">0</span>
+                </button>
+
+                <button class="action" onclick="shareVideo()">
+                    🔗 Share
+                </button>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <!-- ADVERTISEMENT -->
+
+    <div class="ad">
+        Advertisement
+    </div>
+
+
+    <!-- VIDEO 2 -->
+
+    <article class="video-card">
+
+        <div class="video-box">
+
+            <video controls playsinline preload="metadata">
+                <source src="videos/video2.mp4" type="video/mp4">
+            </video>
+
+            <div class="badge">⚡ TRENDING</div>
+
+        </div>
+
+
+        <div class="video-info">
+
+            <div class="title">
+                Trending Short Video
+            </div>
+
+            <div class="description">
+                Watch the latest trending short video.
+            </div>
+
+            <div class="actions">
+
+                <button class="action" onclick="likeVideo(this)">
+                    ❤️ Like
+                </button>
+
+                <button class="action">
+                    👁️ <span class="views">0</span>
+                </button>
+
+                <button class="action" onclick="shareVideo()">
+                    🔗 Share
+                </button>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <!-- ADVERTISEMENT -->
+
+    <div class="ad">
+        Advertisement
+    </div>
+
+
+</main>
+
+
+<footer class="footer">
+
+    © 2026 New Viral Link • All Rights Reserved
+
+</footer>
+
+
+<script>
+
+function likeVideo(button){
+
+    if(button.innerHTML.includes("❤️")){
+        button.innerHTML="❤️ Liked";
+    }
+
+}
+
+
+function shareVideo(){
+
+    if(navigator.share){
+
+        navigator.share({
+            title:"New Viral Link",
+            text:"Check out this viral video!",
+            url:window.location.href
+        });
+
+    }else{
+
+        navigator.clipboard.writeText(window.location.href);
+
+        alert("Website link copied!");
+
+    }
+
+}
+
+
+/* View counter */
+
+const videos=document.querySelectorAll("video");
+
+videos.forEach(video=>{
+
+    video.addEventListener("play",function(){
+
+        const card=video.closest(".video-card");
+
+        const view=card.querySelector(".views");
+
+        let count=parseInt(view.innerText);
+
+        if(!video.dataset.counted){
+
+            count++;
+
+            view.innerText=count;
+
+            video.dataset.counted="true";
+
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
